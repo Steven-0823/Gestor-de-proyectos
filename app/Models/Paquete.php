@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Paquete extends Model
 {
-    use HasFactory;
+    protected $table = '_paquetes';
+    protected $primaryKey = 'id';
+    public $timestamps = false;
 }
